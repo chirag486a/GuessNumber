@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+      
+      <!-- Random Number Display Box -->
+      <div class="random-display-zone">
+        <div class="h1-box">
+          <h1 class="h1">Guess Number between 0 & <span class="high-guess-number"></span></h1>
+        </div>
+        <span class="random-number">4</span>
+    </div>
+
+    <!-- Number Input Box -->
+    <div class="form-container">
+      <form action="#" class="form">
+        <input type="number" class="input-field" max="20" min="0"  />
+        <button type="submit" class="submit-button"  />confirm</button> 
+      </form>
+    </div>
+    
+    <div class="message-box">
+      <p class="response-message">To high</p>
+      <p>Chance:-&nbsp; &nbsp;<span class="chance">20</span></p>
+      <!-- <p class="chance">Chance: <span class="left">20</span></p> -->
+      <!-- <p class="response-message">To Low</p> -->
+      <!-- <p class="response-message">Congrats</p> -->
+
+    </div>
+
+    <div class="show-score">
+      <p>Score <span class="score">0</span></p>
+      <p>Highest score <span class="high-score"></span></p>
+    </div>
+  </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

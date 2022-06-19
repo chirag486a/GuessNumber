@@ -1,0 +1,95 @@
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 2px solid black;
+  outline-offset: 3px;
+}
+
+body {
+  background-color: aqua;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+/* - ----------------------------------------------------------------- */
+/* container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  height: 100%;
+  align-items: center;
+  column-gap: 4.8rem;
+}
+
+/* - ----------------------------------------------------------------- */
+/* .h1-box {
+  align-self: start;
+  justify-self: end;
+} */
+/* - ----------------------------------------------------------------- */
+
+/* - ----------------------------------------------------------------- */
+/* Random Area */
+.random-display-zone {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+.random-number {
+  font-size: 6.4rem;
+}
+/* - ----------------------------------------------------------------- */
+/* Input Area */
+.form-container {
+  align-self: start;
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.input-field {
+  text-align: center;
+  padding: 4.8rem;
+  font-size: 4.8rem;
+  border: 0px;
+}
+/* Button */
+.submit-button {
+  cursor: pointer;
+  padding: 1.6rem 3.2rem;
+  color: brown;
+  background-color: antiquewhite;
+  border: 0px;
+  font-size: 2rem;
+}
+/* - ----------------------------------------------------------------- */
+/* Responce message */
+.message-box {
+  grid-column: -1/ -2;
+  grid-row: 2/ 3;
+  align-self: start;
+  justify-self: start;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.response-message {
+  margin-bottom: 2.4rem;
+}
+/* - ----------------------------------------------------------------- */
+/* score */
+.show-score {
+  grid-row: 2;
+  align-self: start;
+  justify-self: end;
+  font-size: 2.4rem;
+}

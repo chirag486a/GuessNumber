@@ -95,7 +95,6 @@ const init = function (load = false, won = false, over = false) {
   changeElementText(high_score_field, high_score_value);
 
 
-  changeElementText(random_field, "?");
   changeElementText(chance_field, chance);
   changeElementText(score_field, score_value);
   changeElementText(high_score_field, high_score_value);
@@ -130,7 +129,6 @@ const init = function (load = false, won = false, over = false) {
     score_value = high_guess_num;
     changeElementText(score_field, score_value);
 
-
     changeElementText(random_field, "?");
     removeAttribut(input_field, disable);
     changeElementText(button, "Confirm");
@@ -158,6 +156,7 @@ const init = function (load = false, won = false, over = false) {
     return;
   };
   if (load) {
+    changeElementText(random_field, "?");
     changeElementText(button, "Play");
     listener(button, "click", GameLoad);
     changeElementText(message_field, "Click Play to start");
@@ -167,7 +166,6 @@ const init = function (load = false, won = false, over = false) {
     listener(button, "click", GameWon);
     changeElementText(message_field, "Click Play Again to start");
     changeElementText(chance_field, "");
-    changeElementText(random_field, ran_num);
   }
   if (over) {
     changeElementText(button, "Play Again");
@@ -222,6 +220,7 @@ const checker = function (number) {
     message_field.innerHTML = "Correct Guess";
     // before play 
     high_score_value += score_value;
+    changeElementText(random_field, ran_num);
 
     playAgain(true);
 
